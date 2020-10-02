@@ -77,7 +77,7 @@ public class ImageFragment extends Fragment {
         Response<List<Animal>> listResponse = animalService.getAnimals(clientKey).execute();
         List<Animal> animalList = listResponse.body();
         assert animalList != null;
-        final String imageUrl = animalList.get(0).getImageUrl();
+        final String imageUrl = animalList.get(33).getImageUrl();
 
         getActivity().runOnUiThread(new Runnable() {
           @Override
